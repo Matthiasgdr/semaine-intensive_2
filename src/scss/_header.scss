@@ -1,0 +1,51 @@
+/******************
+
+       HEADER
+
+*******************/
+
+nav{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    color: #1E1E1E;
+}
+.logo{
+    width:223px;
+    height:223px;
+}
+ul{
+    display:flex;
+    list-style: none;
+    font-weight: bold;
+}
+.navigation{
+    padding-top: 50px;
+}
+h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding:0;
+    margin:0;
+}
+.primary__nav{
+    padding: 5px 30px;
+    cursor: pointer;
+    position: relative;
+}
+.primary__nav ul{
+    flex-direction: column;
+    padding:30px 0px 0px 0px;
+    display: none;
+    position: absolute;
+}
+.primary__nav:hover ul{
+    display: block;
+    z-index: 50;
+}
+.primary__nav ul li{
+    padding: 2px 0px;
+}
+.primary__nav ul li:hover{
+    color: rgb(244, 162, 246);
+}
