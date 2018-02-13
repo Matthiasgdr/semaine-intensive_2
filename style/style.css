@@ -23,6 +23,7 @@ nav {
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0;
+<<<<<<< HEAD
     margin: 0; }
   nav .primary__nav {
     margin: 5px 25px;
@@ -35,6 +36,15 @@ nav {
       position: absolute;
       top: 12px;
       left: -10px;
+=======
+    margin: 0;
+    position: relative; }
+    nav h2:hover:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: -7px;
+>>>>>>> 2d01cd04eee760c620e51befb6c30b1a38085043
       background-color: #FCEDFF;
       z-index: -1;
       width: 110%;
@@ -42,12 +52,19 @@ nav {
       -webkit-transform: skewX(-30deg);
       -ms-transform: skewX(-30deg);
       transform: skewX(-30deg); }
+  nav .primary__nav {
+    margin: 5px 1.5vw;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    z-index: 1; }
     nav .primary__nav ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
+      min-width: 200px;
       background-color: rgba(255, 255, 255, 0.9);
       padding: 30px 5px 5px 5px;
       display: none;
@@ -70,10 +87,25 @@ nav {
   font-size: 1.3rem;
   font-weight: bold; }
   .user__service div {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+=======
+    display: flex;
+    position: relative; }
+    .user__service div:hover:after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: -10px;
+      background-color: #FCEDFF;
+      z-index: -1;
+      width: 110%;
+      height: 20px;
+      transform: skewX(-30deg); }
+>>>>>>> 2d01cd04eee760c620e51befb6c30b1a38085043
     .user__service div img {
       width: 50px;
       height: 50px; }
@@ -169,6 +201,17 @@ main h3 {
 
 .main__article__centrer div img {
   margin: 5px; }
+
+.main__article2 {
+  margin-top: 8vh;
+  background-color: #FCEDFF; }
+  .main__article2 .products {
+    display: inline-flex;
+    text-align: center;
+    margin: 0 auto; }
+  .main__article2 h3 {
+    position: relative;
+    top: -48px; }
 
 body {
   margin: 0;

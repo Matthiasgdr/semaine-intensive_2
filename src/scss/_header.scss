@@ -21,18 +21,12 @@ nav{
         font-size: 1.2rem;
         padding:0;
         margin:0;
-    }
-    .primary__nav{
-        margin: 5px 1.5vw;
-        cursor: pointer;
         position: relative;
-        text-align: center;
-        z-index: 1;
         &:hover{
         &:after{
             content: "";
             position:absolute;
-            top:12px;
+            bottom:-8px;
             left:-7px;
             background-color: $pink;
             z-index: -1;
@@ -41,8 +35,16 @@ nav{
             transform: skewX(-30deg);
         }
         }
+    }
+    .primary__nav{
+        margin: 5px 1.5vw;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        z-index: 1;
         ul{
             flex-direction: column;
+            min-width: 200px;
             background-color: rgba(255,255,255,0.9);
             padding:30px 5px 5px 5px;
             display: none;
@@ -77,7 +79,7 @@ nav{
         &:after{
             content: '';
             position:absolute;
-            top:25px;
+            bottom:0px;
             left:-10px;
             background-color: $pink;
             z-index: -1;
@@ -94,9 +96,7 @@ nav{
             padding-top:10px;
             margin:0;
             position: relative;
-            &:hover{
 
-        }
     }
 }
 }

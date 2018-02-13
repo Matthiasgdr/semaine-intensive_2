@@ -1,0 +1,14 @@
+.main__article2{
+    margin-top: 8vh;
+    background-color: $pink;
+    .products{
+        display: inline-flex;
+        text-align: center;
+        margin:0 auto;
+    }
+    h3{
+        position: relative;
+        top:-48px;
+    }
+
+}
