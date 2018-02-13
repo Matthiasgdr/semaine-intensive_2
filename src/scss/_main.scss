@@ -10,11 +10,32 @@ main
   }
 }
 
+.main__article__pros {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  &__point {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    img {
+      margin-right: 15px;
+      width: 60px; height: 60px;
+    }
+    p {
+      padding-top: 20px;
+      color: $grey;
+    }
+  }
+}
+
 .main__article ul li
 {
   list-style: none;
 }
-.main__article__centrer
+.main__article__center
 {
   text-align: center;
   a
@@ -27,6 +48,7 @@ main
     font-weight: bold;
     font-size: 1rem;
     position: relative;
+
     &:after
     {
       content: "";
@@ -50,7 +72,8 @@ main
     }
     img
     {
-      margin: 5px;
+      width: 80px;
+      margin: 10px;
     }
   }
 }

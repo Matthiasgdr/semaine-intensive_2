@@ -18,8 +18,10 @@
         fill: black;
         color: black;
         margin: 5px;
+        transition: 0.3s ease-out;
       }
       a:hover svg {
+        transition: 0.3s ease-out;
         fill: $darkpink;
       }
     }
@@ -33,10 +35,11 @@
         margin: auto;
         text-align: center;
         padding: 5px 10px;
+        transition: 0.3s ease-out;
       }
       a:hover h4 {
         background-color: $darkpink;
-
+        transition: 0.3s ease-out;
       }
     }
   }
@@ -45,9 +48,13 @@
     color: $text;
     text-align: center;
     font-size: 0.9rem;
+    transition: 0.3s ease-out;
+
   }
   a h3:hover, h4:hover {
     color: $darkpink;
+    transition: 0.3s ease-out;
+
   }
   h2 {
     font-size: 0.9rem;
