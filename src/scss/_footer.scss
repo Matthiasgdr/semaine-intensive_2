@@ -2,18 +2,32 @@
   display: flex;
   flex-direction: row;
   font-family: $primary-font;
+  justify-content: center;
   .footer__column {
+    margin: 100px;
     display: flex;
     flex-direction: column;
     a {
       text-decoration: none;
     }
   }
-  h3 {
+  h3, h4 {
     font-weight: bold;
     color: $text;
+    text-align: center;
+    font-size: 0.9rem;
   }
-  a h3:hover {
+  a h3:hover, h4:hover {
     color: $darkpink;
+  }
+  h2 {
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  h2 + p {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: lighter;
   }
 }

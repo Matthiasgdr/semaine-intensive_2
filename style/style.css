@@ -145,17 +145,29 @@ main h3 {
 .footer {
   display: flex;
   flex-direction: row;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  justify-content: center; }
   .footer .footer__column {
+    margin: 100px;
     display: flex;
     flex-direction: column; }
     .footer .footer__column a {
       text-decoration: none; }
-  .footer h3 {
+  .footer h3, .footer h4 {
     font-weight: bold;
-    color: #242424; }
-  .footer a h3:hover {
+    color: #242424;
+    text-align: center;
+    font-size: 0.9rem; }
+  .footer a h3:hover, .footer h4:hover {
     color: #ffaffd; }
+  .footer h2 {
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold; }
+  .footer h2 + p {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: lighter; }
 
 body {
   margin: 0;
