@@ -143,6 +143,7 @@ main h3 {
   margin: 5px; }
 
 .footer {
+  font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: row;
   font-family: "Nunito", sans-serif;
@@ -163,12 +164,17 @@ main h3 {
       fill: #ffaffd; }
     .footer .footer__column .footer__column__mail {
       margin-top: 10px;
-      display: flex;
-      flex-direction: row; }
-      .footer .footer__column .footer__column__mail img {
-        width: 20px;
-        height: 20px; }
-  .footer h3, .footer h4 {
+      background-color: #242424;
+      color: white; }
+      .footer .footer__column .footer__column__mail a h4 {
+        color: white;
+        font-size: 0.8rem;
+        margin: auto;
+        text-align: center;
+        padding: 5px 10px; }
+      .footer .footer__column .footer__column__mail a:hover h4 {
+        background-color: #ffaffd; }
+  .footer h3 {
     font-weight: bold;
     color: #242424;
     text-align: center;
@@ -176,9 +182,9 @@ main h3 {
   .footer a h3:hover, .footer h4:hover {
     color: #ffaffd; }
   .footer h2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
-    font-weight: bold; }
+    font-weight: 900; }
   .footer h2 + p {
     font-size: 0.7rem;
     text-align: center;

@@ -1,4 +1,5 @@
 .footer {
+  font-family: $primary-font;
   display: flex;
   flex-direction: row;
   font-family: $primary-font;
@@ -23,14 +24,22 @@
     }
     .footer__column__mail {
       margin-top: 10px;
-      display: flex;
-      flex-direction: row;
-      img {
-        width: 20px; height: 20px;
+      background-color: $text;
+      color: white;
+      a h4 {
+        color: white;
+        font-size: 0.8rem;
+        margin: auto;
+        text-align: center;
+        padding: 5px 10px;
+      }
+      a:hover h4 {
+        background-color: $darkpink;
+
       }
     }
   }
-  h3, h4 {
+  h3 {
     font-weight: bold;
     color: $text;
     text-align: center;
@@ -40,9 +49,9 @@
     color: $darkpink;
   }
   h2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
   }
   h2 + p {
     font-size: 0.7rem;
