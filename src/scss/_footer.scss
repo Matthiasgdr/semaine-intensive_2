@@ -10,6 +10,17 @@
     a {
       text-decoration: none;
     }
+    .footer__column__socials {
+      svg {
+        width: 30px; height: 30px;
+        fill: black;
+        color: black;
+        margin: 5px;
+      }
+      a:hover svg {
+        fill: $darkpink;
+      }
+    }
   }
   h3, h4 {
     font-weight: bold;
