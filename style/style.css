@@ -16,25 +16,27 @@ nav {
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0;
-    margin: 0; }
-  nav .primary__nav {
-    margin: 5px 1.5vw;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    z-index: 1; }
-    nav .primary__nav:hover:after {
+    margin: 0;
+    position: relative; }
+    nav h2:hover:after {
       content: "";
       position: absolute;
-      top: 12px;
+      bottom: -8px;
       left: -7px;
       background-color: #FCEDFF;
       z-index: -1;
       width: 110%;
       height: 20px;
       transform: skewX(-30deg); }
+  nav .primary__nav {
+    margin: 5px 1.5vw;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    z-index: 1; }
     nav .primary__nav ul {
       flex-direction: column;
+      min-width: 200px;
       background-color: rgba(255, 255, 255, 0.9);
       padding: 30px 5px 5px 5px;
       display: none;
@@ -62,7 +64,7 @@ nav {
     .user__service div:hover:after {
       content: '';
       position: absolute;
-      top: 25px;
+      bottom: 0px;
       left: -10px;
       background-color: #FCEDFF;
       z-index: -1;
@@ -141,6 +143,17 @@ main h3 {
 
 .main__article__centrer div img {
   margin: 5px; }
+
+.main__article2 {
+  margin-top: 8vh;
+  background-color: #FCEDFF; }
+  .main__article2 .products {
+    display: inline-flex;
+    text-align: center;
+    margin: 0 auto; }
+  .main__article2 h3 {
+    position: relative;
+    top: -48px; }
 
 body {
   margin: 0;
