@@ -1,50 +1,21 @@
+
 .carrousel
 {
-  position: absolute;
-  right: 0;
-  width: 80%;
-<<<<<<< HEAD
-}
-.container__carrousel:before
-{
-  content: '';
-  display: block;
-  background-color: $blue;
-  width: 100%;
-  height: 95%;
-  position: absolute;
-  bottom: -10%;
-  left: 0px;
-  z-index: -1;
-=======
-  z-index: -20;
->>>>>>> ca0f5dea7a0cf24239e370ff387f1388a4fc6d35
-}
-.container__carrousel
-{
   position: relative;
-  top:0;
-  height: 500px;
-  .carrousel
-  {
-    position: absolute;
-    right: 0;
-    width: 80%;
-  }
-  .flechegauche
-  {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: 8%;
-    top: 200px;
-  }
-  .flechedroite
-  {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: 250px;
-    left: 8%;
-  }
+}
+.flechegauche
+{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 8%;
+  top: 200px;
+}
+.flechedroite
+{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 250px;
+  left: 8%;
 }
