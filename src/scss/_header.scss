@@ -23,7 +23,7 @@ nav{
         margin:0;
     }
     .primary__nav{
-        margin: 5px 25px;
+        margin: 5px 1.5vw;
         cursor: pointer;
         position: relative;
         text-align: center;
@@ -33,7 +33,7 @@ nav{
             content: "";
             position:absolute;
             top:12px;
-            left:0px;
+            left:-7px;
             background-color: $pink;
             z-index: -1;
             width:110%;
@@ -67,7 +67,7 @@ nav{
     }
 }
 .user__service{
-    padding: 30px 50px;
+    padding: 30px 3vw;
     font-size: 1.3rem;
     font-weight: bold;
     div{
