@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 /******************
 
        HEADER
 
 *******************/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 nav {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
@@ -10,7 +12,7 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #1E1E1E; }
+  color: #242424; }
   nav ul {
     list-style: none; }
   nav .logo {
@@ -23,15 +25,25 @@ nav {
     display: -ms-flexbox;
     display: flex;
     font-weight: bold; }
-  nav h3 {
+  nav h2 {
     font-weight: bold;
     font-size: 20px;
     padding: 0;
     margin: 0; }
   nav .primary__nav {
-    padding: 5px 30px;
+    margin: 5px 35px;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    z-index: 0; }
+    nav .primary__nav:hover:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      z-index: -1;
+      background-color: #ffa3f6;
+      width: 100%;
+      height: 20px;
+      transform: skewX(-30deg); }
     nav .primary__nav ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -39,20 +51,23 @@ nav {
       -ms-flex-direction: column;
       flex-direction: column;
       background-color: white;
-      padding: 30px 0px 0px 0px;
+      padding: 30px 5px 5px 5px;
       display: none;
       position: absolute; }
   nav .primary__nav:hover ul {
     display: block;
-    z-index: 50; }
+    z-index: -2; }
   nav .primary__nav ul li {
-    padding: 2px 0px; }
+    padding: 2px 0px;
+    color: #888888;
+    font-weight: 600; }
   nav .primary__nav ul li:hover {
     color: #ffa3f6; }
 
 .carrousel {
   position: absolute;
   right: 0;
+<<<<<<< HEAD
   width: 80%; }
 
 .container__carrousel:before {
@@ -65,6 +80,10 @@ nav {
   bottom: -10%;
   left: 0px;
   z-index: -1; }
+=======
+  width: 80%;
+  z-index: -20; }
+>>>>>>> ca0f5dea7a0cf24239e370ff387f1388a4fc6d35
 
 .container__carrousel {
   position: relative;
