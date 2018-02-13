@@ -1,10 +1,4 @@
-/******************
-
-       HEADER
-
-*******************/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-
 nav{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -38,10 +32,11 @@ nav{
         &:after{
             content: "";
             position:absolute;
-            top:10px;
+            top:12px;
+            left:-10px;
             z-index: -1;
             background-color: $pink;
-            width:100%;
+            width:110%;
             height:20px;
             transform: skewX(-30deg);
         }
@@ -54,16 +49,15 @@ nav{
             position: absolute;
         }
     }
-
-    .primary__nav:hover ul{
-        display: block;
-        z-index: -2;
-    }
     .primary__nav ul li{
         padding: 2px 0px;
         color: $grey;
         font-weight: 600;
 
+    }
+    .primary__nav:hover ul{
+        display: block;
+        z-index: -2;
     }
     .primary__nav ul li:hover{
         color: $pink;

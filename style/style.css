@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
-/******************
-
-       HEADER
-
-*******************/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 nav {
   background-color: white;
@@ -38,10 +33,11 @@ nav {
     nav .primary__nav:hover:after {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 12px;
+      left: -10px;
       z-index: -1;
-      background-color: #ffa3f6;
-      width: 100%;
+      background-color: #FCEDFF;
+      width: 110%;
       height: 20px;
       -webkit-transform: skewX(-30deg);
       -ms-transform: skewX(-30deg);
@@ -56,15 +52,15 @@ nav {
       padding: 30px 5px 5px 5px;
       display: none;
       position: absolute; }
-  nav .primary__nav:hover ul {
-    display: block;
-    z-index: -2; }
   nav .primary__nav ul li {
     padding: 2px 0px;
     color: #888888;
     font-weight: 600; }
+  nav .primary__nav:hover ul {
+    display: block;
+    z-index: -2; }
   nav .primary__nav ul li:hover {
-    color: #ffa3f6; }
+    color: #FCEDFF; }
 
 .carrousel {
   position: relative; }
