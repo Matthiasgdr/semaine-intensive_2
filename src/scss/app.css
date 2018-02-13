@@ -142,24 +142,9 @@ main h3 {
 .main__article__centrer div img {
   margin: 5px; }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  font-family: "Nunito", sans-serif; }
-  .footer .footer__column {
-    display: flex;
-    flex-direction: column; }
-    .footer .footer__column a {
-      text-decoration: none; }
-  .footer h3 {
-    font-weight: bold;
-    color: #242424; }
-  .footer a h3:hover {
-    color: #ffaffd; }
-
 body {
   margin: 0;
   font-size: 62.5%;
   color: #242424; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=app.css.map */
