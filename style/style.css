@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i");
 nav {
-  background-color: white;
   font-family: "Nunito", sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
   nav ul {
     list-style: none; }
@@ -14,9 +10,6 @@ nav {
     height: 223px; }
   nav .navigation {
     padding-top: 50px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     font-weight: bold; }
   nav h2 {
@@ -25,7 +18,7 @@ nav {
     padding: 0;
     margin: 0; }
   nav .primary__nav {
-    margin: 5px 25px;
+    margin: 5px 1.5vw;
     cursor: pointer;
     position: relative;
     text-align: center;
@@ -34,19 +27,13 @@ nav {
       content: "";
       position: absolute;
       top: 12px;
-      left: -10px;
+      left: -7px;
       background-color: #FCEDFF;
       z-index: -1;
       width: 110%;
       height: 20px;
-      -webkit-transform: skewX(-30deg);
-      -ms-transform: skewX(-30deg);
       transform: skewX(-30deg); }
     nav .primary__nav ul {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
       background-color: rgba(255, 255, 255, 0.9);
       padding: 30px 5px 5px 5px;
@@ -66,14 +53,22 @@ nav {
     z-index: -2; }
 
 .user__service {
-  padding: 30px 70px;
+  padding: 30px 3vw;
   font-size: 1.3rem;
   font-weight: bold; }
   .user__service div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    position: relative; }
+    .user__service div:hover:after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: -10px;
+      background-color: #FCEDFF;
+      z-index: -1;
+      width: 110%;
+      height: 20px;
+      transform: skewX(-30deg); }
     .user__service div img {
       width: 50px;
       height: 50px; }
@@ -81,18 +76,6 @@ nav {
       padding-top: 10px;
       margin: 0;
       position: relative; }
-      .user__service div p:hover:after {
-        content: "";
-        position: absolute;
-        top: 12px;
-        left: -10px;
-        background-color: #FCEDFF;
-        z-index: -1;
-        width: 110%;
-        height: 20px;
-        -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-        transform: skewX(-30deg); }
 
 .carrousel {
   position: relative; }
@@ -148,6 +131,7 @@ main {
   .main__article__centrer div img {
     margin: 5px; }
 
+<<<<<<< HEAD
 .main__article__container {
   margin: 35px auto;
   width: 600px; }
@@ -165,8 +149,46 @@ main {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+=======
+.main__article__centrer a {
+  text-decoration: none;
+  border: 2px solid #242424;
+  border-radius: 5px;
+  padding: 8px;
+  color: #242424;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative; }
+
+.main__article__centrer a:after {
+  content: "";
+  background: #E0E5FF;
+  border-radius: 5px;
+  z-index: -1;
+  width: 102%;
+  height: 110%;
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+.main__article__centrer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.main__article__centrer div p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888888; }
+
+.main__article__centrer div img {
+  margin: 5px; }
+>>>>>>> d3bf2ee80aaa71673e053e9e566a2d07cbefe872
 
 body {
   margin: 0;
   font-size: 62.5%;
   color: #242424; }
+
+/*# sourceMappingURL=style.css.map */
