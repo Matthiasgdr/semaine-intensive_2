@@ -27,15 +27,15 @@ nav{
         margin: 5px 35px;
         cursor: pointer;
         position: relative;
-        z-index: 0;
+        z-index: 1;
         &:hover{
         &:after{
             content: "";
             position:absolute;
             top:12px;
             left:-10px;
-            z-index: -1;
             background-color: $pink;
+            z-index: -1;
             width:110%;
             height:20px;
             transform: skewX(-30deg);

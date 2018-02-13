@@ -2,20 +2,20 @@
 .carrousel
 {
   position: relative;
-}
-.flechegauche
-{
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  left: 8%;
-  top: 200px;
-}
-.flechedroite
-{
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: 250px;
-  left: 8%;
+  .flechegauche
+  {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 8%;
+    top: 200px;
+  }
+  .flechedroite
+  {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 250px;
+    left: 8%;
+  }
 }

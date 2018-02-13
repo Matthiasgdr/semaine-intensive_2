@@ -23,14 +23,14 @@ nav {
     margin: 5px 35px;
     cursor: pointer;
     position: relative;
-    z-index: 0; }
+    z-index: 1; }
     nav .primary__nav:hover:after {
       content: "";
       position: absolute;
       top: 12px;
       left: -10px;
-      z-index: -1;
       background-color: #FCEDFF;
+      z-index: -1;
       width: 110%;
       height: 20px;
       transform: skewX(-30deg); }
@@ -52,20 +52,18 @@ nav {
 
 .carrousel {
   position: relative; }
-
-.flechegauche {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  left: 8%;
-  top: 200px; }
-
-.flechedroite {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: 250px;
-  left: 8%; }
+  .carrousel .flechegauche {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 8%;
+    top: 200px; }
+  .carrousel .flechedroite {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 250px;
+    left: 8%; }
 
 body {
   margin: 0; }
