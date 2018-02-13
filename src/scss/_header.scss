@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i');
 nav{
     background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primary-font;
     display: flex;
     color: $text;
 
@@ -24,7 +24,7 @@ nav{
         margin:0;
     }
     .primary__nav{
-        margin: 5px 35px;
+        margin: 5px 19px;
         cursor: pointer;
         position: relative;
         z-index: 1;
@@ -34,8 +34,8 @@ nav{
             position:absolute;
             top:12px;
             left:-10px;
-            z-index: -1;
             background-color: $pink;
+            z-index: -1;
             width:110%;
             height:20px;
             transform: skewX(-30deg);
