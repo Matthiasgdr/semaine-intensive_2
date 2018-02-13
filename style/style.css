@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i");
+.desc {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  font-size: 1.2rem; }
+
 nav {
   font-family: "Nunito", sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
   nav ul {
     list-style: none; }
@@ -13,9 +16,6 @@ nav {
     height: 223px; }
   nav .navigation {
     padding-top: 50px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     font-weight: bold; }
   nav h2 {
@@ -33,8 +33,6 @@ nav {
       z-index: -1;
       width: 110%;
       height: 20px;
-      -webkit-transform: skewX(-30deg);
-      -ms-transform: skewX(-30deg);
       transform: skewX(-30deg); }
   nav .primary__nav {
     margin: 5px 1.5vw;
@@ -43,10 +41,6 @@ nav {
     text-align: center;
     z-index: 1; }
     nav .primary__nav ul {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
       min-width: 200px;
       background-color: rgba(255, 255, 255, 0.9);
@@ -71,9 +65,12 @@ nav {
   font-size: 1.3rem;
   font-weight: bold; }
   .user__service div {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
+=======
+>>>>>>> ae2ac6c3faea4a6a93f9f5045180caf4ad39b874
     display: flex;
     position: relative; }
     .user__service div:hover:after {
@@ -160,23 +157,20 @@ main {
   margin: 35px auto;
   width: 600px; }
   .main__article__container div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
 
 .main__article2 {
   margin-top: 8vh;
-  background-color: #FCEDFF; }
+  background-color: #FCEDFF;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif; }
+  .main__article2 h3 {
+    position: relative;
+    top: -48px; }
+  .main__article2 .center {
+    text-align: center; }
   .main__article2 .products {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -184,11 +178,18 @@ main {
     display: inline-flex;
     text-align: center;
     margin: 0 auto; }
-  .main__article2 h3 {
-    position: relative;
-    top: -48px; }
+  .main__article2 .item {
+    padding: 0 20px; }
+    .main__article2 .item img {
+      margin-bottom: 20px; }
+    .main__article2 .item .bold {
+      font-weight: 700; }
+    .main__article2 .item p {
+      margin: 0; }
 
 body {
   margin: 0;
   font-size: 62.5%;
   color: #242424; }
+
+/*# sourceMappingURL=style.css.map */
