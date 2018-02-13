@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i');
+
 nav{
     background-color: white;
     font-family: $primary-font;
     display: flex;
-    color: $text;
 
     ul{
         list-style: none;
@@ -19,14 +19,15 @@ nav{
     }
     h2{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.2rem;
         padding:0;
         margin:0;
     }
     .primary__nav{
-        margin: 5px 19px;
+        margin: 5px 25px;
         cursor: pointer;
         position: relative;
+        text-align: center;
         z-index: 1;
         &:hover{
         &:after{
@@ -43,9 +44,10 @@ nav{
         }
         ul{
             flex-direction: column;
-            background-color: white;
+            background-color: rgba(255,255,255,0.9);
             padding:30px 5px 5px 5px;
             display: none;
+            border-radius: 10px;
             position: absolute;
         }
     }
@@ -53,14 +55,45 @@ nav{
         padding: 2px 0px;
         color: $grey;
         font-weight: 600;
+        font-size: 1rem;
+        text-align: left;
+        &:hover{
+            color: $darkpink;
+        }
 
     }
     .primary__nav:hover ul{
         display: block;
         z-index: -2;
     }
-    .primary__nav ul li:hover{
-        color: $blue;
+}
+.user__service{
+    padding: 30px 70px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    div{
+        display: flex;
+        img{
+            width:50px;
+            height:50px;
+        }
+        p{
+            padding-top:10px;
+            margin:0;
+            position: relative;
+            &:hover{
+            &:after{
+                content: "";
+                position:absolute;
+                top:12px;
+                left:-10px;
+                background-color: $pink;
+                z-index: -1;
+                width:110%;
+                height:20px;
+                transform: skewX(-30deg);
+            }
+        }
     }
-
+}
 }
