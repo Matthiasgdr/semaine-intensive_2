@@ -161,6 +161,13 @@ main h3 {
       margin: 5px; }
     .footer .footer__column .footer__column__socials a:hover svg {
       fill: #ffaffd; }
+    .footer .footer__column .footer__column__mail {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row; }
+      .footer .footer__column .footer__column__mail img {
+        width: 20px;
+        height: 20px; }
   .footer h3, .footer h4 {
     font-weight: bold;
     color: #242424;
