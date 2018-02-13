@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i');
 
 nav{
-    background-color: white;
     font-family: $primary-font;
     display: flex;
 
@@ -34,7 +33,7 @@ nav{
             content: "";
             position:absolute;
             top:12px;
-            left:-10px;
+            left:0px;
             background-color: $pink;
             z-index: -1;
             width:110%;
@@ -68,11 +67,25 @@ nav{
     }
 }
 .user__service{
-    padding: 30px 70px;
+    padding: 30px 50px;
     font-size: 1.3rem;
     font-weight: bold;
     div{
         display: flex;
+        position: relative;
+        &:hover{
+        &:after{
+            content: '';
+            position:absolute;
+            top:25px;
+            left:-10px;
+            background-color: $pink;
+            z-index: -1;
+            width:110%;
+            height:20px;
+            transform: skewX(-30deg);
+        }
+    }
         img{
             width:50px;
             height:50px;
@@ -82,17 +95,7 @@ nav{
             margin:0;
             position: relative;
             &:hover{
-            &:after{
-                content: "";
-                position:absolute;
-                top:12px;
-                left:-10px;
-                background-color: $pink;
-                z-index: -1;
-                width:110%;
-                height:20px;
-                transform: skewX(-30deg);
-            }
+
         }
     }
 }
