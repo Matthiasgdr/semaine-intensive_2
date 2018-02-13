@@ -4,12 +4,13 @@
   flex-direction: row;
   font-family: $primary-font;
   justify-content: center;
+  
   .footer__column {
     margin: 100px;
     display: flex;
     flex-direction: column;
     a {
-      
+
       text-decoration: none;
     }
     .footer__column__socials {
