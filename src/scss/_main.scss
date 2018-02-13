@@ -1,6 +1,41 @@
-.main__article h3
+main
 {
   font-family: $primary-font;
+}
+main h3
+{
   font-weight: bold;
-  padding: 20px 50px;
+  font-size: 2.5rem;
+  padding: 20px 100px;
+  color: $text;
+}
+.main__article ul li
+{
+  list-style: none;
+}
+.main__article__centrer
+{
+  text-align: center;
+}
+.main__article__centrer a
+{
+  text-decoration: none;
+  border: 2px solid $text;
+  border-radius: 5px;
+  padding: 8px;
+  color: $text;
+  font-weight: bold;
+  position: relative;
+}
+.main__article__centrer a:after
+{
+  content: "";
+  background: $blue;
+  border-radius: 5px;
+  z-index: -1;
+  width: 102%;
+  height: 110%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
