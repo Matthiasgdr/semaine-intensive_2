@@ -1,0 +1,62 @@
+.footer {
+  font-family: $primary-font;
+  display: flex;
+  flex-direction: row;
+  font-family: $primary-font;
+  justify-content: center;
+  .footer__column {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    a {
+      
+      text-decoration: none;
+    }
+    .footer__column__socials {
+      svg {
+        width: 30px; height: 30px;
+        fill: black;
+        color: black;
+        margin: 5px;
+      }
+      a:hover svg {
+        fill: $darkpink;
+      }
+    }
+    .footer__column__mail {
+      margin-top: 10px;
+      background-color: $text;
+      color: white;
+      a h4 {
+        color: white;
+        font-size: 0.8rem;
+        margin: auto;
+        text-align: center;
+        padding: 5px 10px;
+      }
+      a:hover h4 {
+        background-color: $darkpink;
+
+      }
+    }
+  }
+  h3 {
+    font-weight: bold;
+    color: $text;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  a h3:hover, h4:hover {
+    color: $darkpink;
+  }
+  h2 {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 900;
+  }
+  h2 + p {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: lighter;
+  }
+}
