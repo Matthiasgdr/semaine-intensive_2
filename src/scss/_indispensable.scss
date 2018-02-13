@@ -1,14 +1,32 @@
 .main__article2{
     margin-top: 8vh;
     background-color: $pink;
+    font-size: 1.2rem;
+    font-family: $primary-font;
+    h3{
+        position: relative;
+        top:-48px;
+    }
+    .center{
+        text-align: center;
+    }
     .products{
         display: inline-flex;
         text-align: center;
         margin:0 auto;
     }
-    h3{
-        position: relative;
-        top:-48px;
+    .item{
+        padding: 0 20px;
+        img{
+            margin-bottom: 20px;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        p{
+            margin:0;
+        }
     }
+
 
 }
