@@ -65,17 +65,22 @@ nav {
 .carrousel {
   position: relative; }
   .carrousel .flechegauche {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     left: 8%;
-    top: 200px; }
+    top: 45%; }
   .carrousel .flechedroite {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     position: absolute;
-    top: 250px;
+    top: 35%;
     left: 8%; }
+
+.main__article h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 20px 50px; }
 
 body {
   margin: 0; }
