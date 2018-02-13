@@ -3,6 +3,9 @@
 nav {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   color: #242424; }
   nav ul {
@@ -12,6 +15,9 @@ nav {
     height: 223px; }
   nav .navigation {
     padding-top: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     font-weight: bold; }
   nav h2 {
@@ -33,8 +39,14 @@ nav {
       z-index: -1;
       width: 110%;
       height: 20px;
+      -webkit-transform: skewX(-30deg);
+      -ms-transform: skewX(-30deg);
       transform: skewX(-30deg); }
     nav .primary__nav ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column;
       background-color: white;
       padding: 30px 5px 5px 5px;
@@ -67,5 +79,3 @@ nav {
 
 body {
   margin: 0; }
-
-/*# sourceMappingURL=style.css.map */
