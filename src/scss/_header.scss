@@ -12,8 +12,13 @@ header{
   display: flex;
   .logo{
     margin-left: 30px;
+<<<<<<< HEAD
     width:150px;
     height:150px;
+=======
+    width:100px;
+    height:100px;
+>>>>>>> 2f5debc602cadafd6aa9d60313eadc1569f816f3
 
     @media screen and (max-width: $break-medium){
       margin: 0 auto;
