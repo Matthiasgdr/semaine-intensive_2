@@ -94,17 +94,21 @@ nav{
         align-items: center;
         position: relative;
         &:hover{
+            &::after{
+            width: 110%;
+        }
+    }
         &::after{
             content: "";
             position:absolute;
-            bottom:-8px;
+            bottom:3px;
             left:-7px;
             background-color: $pink;
             z-index: -1;
-            width:110%;
+            width:0%;
             height:20px;
             transform: skewX(-30deg);
-            transition: all 2s;
+            transition: all 0.3s;
         }
     }
         img{
@@ -115,5 +119,4 @@ nav{
             margin:0;
             position: relative;
     }
-}
 }

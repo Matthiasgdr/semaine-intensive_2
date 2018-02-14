@@ -78,22 +78,24 @@ nav {
     align-items: center;
     position: relative; }
     .user__service div:hover::after {
+      width: 110%; }
+    .user__service div::after {
       content: "";
       position: absolute;
-      bottom: -8px;
+      bottom: 3px;
       left: -7px;
       background-color: #FCEDFF;
       z-index: -1;
-      width: 110%;
+      width: 0%;
       height: 20px;
       transform: skewX(-30deg);
-      transition: all 2s; }
-    .user__service div img {
-      width: 50px;
-      height: 50px; }
-    .user__service div p {
-      margin: 0;
-      position: relative; }
+      transition: all 0.3s; }
+  .user__service img {
+    width: 50px;
+    height: 50px; }
+  .user__service p {
+    margin: 0;
+    position: relative; }
 
 .carrousel {
   position: relative; }
