@@ -132,6 +132,9 @@ main {
     font-size: 2.5rem;
     padding: 20px 100px;
     color: #242424; }
+    @media screen and (max-width: 768px) {
+      main h3 {
+        padding: 20px 50px; } }
 
 .main__article__pros {
   width: 500px;
@@ -219,7 +222,6 @@ main {
   margin-top: 8vh;
   padding-bottom: 60px;
   background-color: #FCEDFF;
-  font-size: 1.2rem;
   font-family: "Nunito", sans-serif; }
   .main__article2 h3 {
     position: relative;
@@ -235,6 +237,9 @@ main {
     margin: 0 auto; }
   .main__article2 .item {
     padding: 0 20px; }
+    @media screen and (max-width: 375px) {
+      .main__article2 .item {
+        padding: 0; } }
     .main__article2 .item img {
       margin-bottom: 20px; }
     .main__article2 .item .bold {
@@ -269,6 +274,9 @@ main {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .footer .footer__column:nth-child(2) {
+        display: none; } }
     .footer .footer__column a {
       text-decoration: none; }
     .footer .footer__column .footer__column__socials svg {
@@ -285,6 +293,17 @@ main {
       -o-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       fill: #ffaffd; }
+    @media screen and (max-width: 768px) {
+      .footer .footer__column .footer__column__socials {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
     .footer .footer__column .footer__column__mail {
       margin-top: 10px;
       background-color: #242424;
