@@ -24,10 +24,14 @@ main
   flex-direction: column;
   padding: 40px 0;
   &__point {
-    font-size: 0.9rem;
     padding: 5px 0;
     display: flex;
     flex-direction: row;
+    p
+    {
+      font-size: 0.9rem;
+      margin: auto 0;
+    }
     @media screen and (max-width: $break-small){
       flex-direction: column;
       text-align: center;
@@ -41,7 +45,6 @@ main
       }
     }
     p {
-      padding-top: 20px;
       color: $grey;
     }
   }
