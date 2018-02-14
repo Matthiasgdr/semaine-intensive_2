@@ -29,7 +29,7 @@ nav{
         padding:0;
         margin:0;
         position: relative;
-        /*&:hover{
+        &:hover{
         &::after{
             content: "";
             position:absolute;
@@ -41,21 +41,9 @@ nav{
             height:20px;
             transform: skewX(-30deg);
         }
-      }*/
+      }
     }
-    H2:hover, .primary__nav ul:hover{
-    &::after{
-        content: "";
-        position:absolute;
-        bottom:-8px;
-        left:-7px;
-        background-color: $pink;
-        z-index: -1;
-        width:110%;
-        height:20px;
-        transform: skewX(-30deg);
-    }
-  }
+
     .primary__nav{
         margin: 5px 1.5vw;
         cursor: pointer;
