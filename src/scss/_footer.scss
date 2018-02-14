@@ -35,20 +35,18 @@
       }
     }
     .footer__column__mail {
+      display: flex;
+      flex-direction: row;
       margin-top: 10px;
-      background-color: $text;
-      color: white;
-      a h4 {
-        color: white;
+      a{
+        color: $text;
         font-size: 0.8rem;
-        margin: auto;
         text-align: center;
-        padding: 5px 10px;
-        transition: 0.3s ease-out;
+        align-self: center;
       }
-      a:hover h4 {
-        background-color: $darkpink;
-        transition: 0.3s ease-out;
+      img{
+        width: 40px;
+        height: 40px;
       }
     }
   }

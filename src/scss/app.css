@@ -9,11 +9,12 @@
   font-style: italic; }
 
 header {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   header .logo {
     margin-left: 30px;
-    width: 100px;
-    height: 100px; }
+    width: 150px;
+    height: 150px; }
     @media screen and (max-width: 1024px) {
       header .logo {
         margin: 0 auto; } }
@@ -44,6 +45,12 @@ nav {
     padding: 0;
     margin: 0;
     position: relative; }
+    nav h2 a {
+      color: #242424;
+      text-decoration: none; }
+      nav h2 a:hover {
+        text-decoration: none;
+        color: #242424; }
     nav h2:hover::after {
       width: 110%; }
     nav h2::after {
@@ -79,6 +86,11 @@ nav {
     text-align: left; }
     nav .primary__nav ul li:hover {
       color: #242424; }
+    nav .primary__nav ul li a {
+      text-decoration: none;
+      color: #888888; }
+      nav .primary__nav ul li a:hover {
+        color: #242424; }
   nav .primary__nav:hover ul {
     display: block;
     z-index: -2; }
@@ -213,6 +225,7 @@ main {
 .main__article2 {
   margin-top: 8vh;
   padding-bottom: 60px;
+  font-size: 1.2rem;
   background-color: #FCEDFF;
   font-family: "Nunito", sans-serif; }
   .main__article2 h3 {
@@ -220,10 +233,6 @@ main {
     top: -48px; }
   .main__article2 .center {
     text-align: center; }
-  .main__article2 .products {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto; }
   .main__article2 .item {
     padding: 0 20px; }
     @media screen and (max-width: 375px) {
@@ -234,7 +243,8 @@ main {
     .main__article2 .item .bold {
       font-weight: 700; }
     .main__article2 .item p {
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
 
 .footer {
   font-family: "Nunito", sans-serif;
@@ -266,9 +276,10 @@ main {
         display: flex;
         flex-direction: row; } }
     .footer .footer__column .footer__column__mail {
+      display: flex;
+      flex-direction: row;
       margin-top: 10px;
-      background-color: #242424;
-      color: white; }
+      color: #242424; }
       .footer .footer__column .footer__column__mail a h4 {
         color: white;
         font-size: 0.8rem;
@@ -279,6 +290,9 @@ main {
       .footer .footer__column .footer__column__mail a:hover h4 {
         background-color: #ffaffd;
         transition: 0.3s ease-out; }
+      .footer .footer__column .footer__column__mail img {
+        width: 20px;
+        height: 20px; }
   .footer h3 {
     font-weight: bold;
     color: #242424;
@@ -424,6 +438,7 @@ label {
 
 .opinion {
   background: #FCEDFF;
+  position: relative;
   padding: 40px 190px;
   display: flex;
   flex-direction: row;
@@ -451,6 +466,48 @@ label {
     .opinion__others p {
       font-size: 1rem;
       width: 400px; }
+  .opinion form label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem; }
+  .opinion form .champ {
+    border: 1px solid #FCEDFF;
+    border-radius: 5px;
+    height: 10%;
+    width: 80%;
+    margin-bottom: 8px; }
+  .opinion form textarea {
+    border: 1px solid #FCEDFF;
+    border-radius: 5px;
+    height: 30%;
+    width: 120%;
+    resize: none; }
+  .opinion form h4 {
+    margin-bottom: 4px; }
+  .opinion form .opinion__you__last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120%;
+    margin-top: 8px; }
+    .opinion form .opinion__you__last .note {
+      display: flex;
+      flex-direction: column; }
+    .opinion form .opinion__you__last .opinion__you__last__stars {
+      display: flex;
+      flex-direction: row; }
+      .opinion form .opinion__you__last .opinion__you__last__stars img {
+        margin: 0 2px;
+        width: 20px;
+        height: 20px; }
+  .opinion form a {
+    text-decoration: none;
+    color: #242424;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #E0E5FF;
+    padding: 15px 30px;
+    border-radius: 5px; }
 
 body {
   font-family: "Nunito", sans-serif;
