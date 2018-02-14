@@ -1,0 +1,71 @@
+p
+{
+  font-size: 1.2rem;
+}
+.main__info
+{
+  .main__article
+  {
+    &:first-of-type
+    {
+      background: $blue;
+      padding-bottom: 60px;
+      .texte
+      {
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        a img
+        {
+          width: 50px;
+        }
+      }
+    }
+    &:nth-child(2)
+    {
+      h4
+      {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .main__article__pollenni
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 40px 100px;
+        padding-bottom: 60px;
+        .texte
+        {
+          align-self: center;
+          width: 40%;
+        }
+      }
+    }
+    &:nth-child(3)
+    {
+      background: $pink;
+      padding-bottom: 60px;
+      p
+      {
+        margin: 0 auto;
+        width: 60%;
+      }
+    }
+    &:last-of-type
+    {
+      background: $blue;
+      padding-bottom: 60px;
+      >p
+      {
+        margin: 0 auto;
+        width: 70%;
+      }
+    }
+    h3
+    {
+      position: relative;
+      top: -48px;
+    }
+  }
+}
