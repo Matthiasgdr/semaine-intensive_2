@@ -263,7 +263,93 @@ main {
     text-align: center;
     font-weight: lighter; }
 
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  background: #E0E5FF;
+  padding: 10px 190px; }
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #242424; }
+  .breadcrumbs a:hover {
+    color: #ffffff; }
+  .breadcrumbs p {
+    margin: 0 10px; }
+  .breadcrumbs a, .breadcrumbs p {
+    font-size: 0.8rem; }
+
+.product {
+  padding: 40px 190px;
+  display: flex;
+  flex-direction: row; }
+  .product h4 {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-weight: bold; }
+  .product__image {
+    border: 10px solid #FCEDFF;
+    border-radius: 5px;
+    background: #FCEDFF; }
+    .product__image img {
+      width: 300px; }
+  .product__desc {
+    margin: 30px; }
+    .product__desc p {
+      font-size: 0.8rem;
+      margin: 5px 0; }
+    .product__desc__buttons {
+      display: flex;
+      flex-direction: row; }
+      .product__desc__buttons input {
+        width: 100px;
+        border-style: none;
+        color: #242424;
+        font-weight: bold;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        text-align: center;
+        background: #E0E5FF; }
+      .product__desc__buttons a {
+        margin-left: 300px;
+        font-size: 1.2rem;
+        background: #FCEDFF;
+        padding: 15px 30px;
+        color: #242424;
+        text-decoration: none;
+        font-weight: bold; }
+
+.opinion {
+  background: #FCEDFF;
+  padding: 40px 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .opinion h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px; }
+  .opinion__others {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column; }
+    .opinion__others__title {
+      display: flex;
+      flex-direction: row; }
+      .opinion__others__title__stars {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        padding: 0; }
+        .opinion__others__title__stars img {
+          margin: 0 2px;
+          width: 20px;
+          height: 20px; }
+    .opinion__others p {
+      font-size: 1rem;
+      width: 400px; }
+
 body {
+  font-family: "Nunito", sans-serif;
   margin: 0;
   font-size: 62.5%;
   color: #242424; }

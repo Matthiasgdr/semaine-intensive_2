@@ -5,8 +5,10 @@
 @import "main";
 @import "indispensable";
 @import "footer";
+@import "product";
 
 body{
+  font-family: $primary-font;
     margin:0;
     font-size: 62.5%;
     color:$text;
