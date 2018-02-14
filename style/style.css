@@ -297,7 +297,6 @@ main {
   .product__desc {
     margin: 30px; }
     .product__desc p {
-      width: 400px;
       font-size: 0.8rem;
       margin: 5px 0; }
     .product__desc__buttons {
@@ -320,6 +319,36 @@ main {
         color: #242424;
         text-decoration: none;
         font-weight: bold; }
+
+.opinion {
+  background: #FCEDFF;
+  padding: 40px 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .opinion h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px; }
+  .opinion__others {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column; }
+    .opinion__others__title {
+      display: flex;
+      flex-direction: row; }
+      .opinion__others__title__stars {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        padding: 0; }
+        .opinion__others__title__stars img {
+          margin: 0 2px;
+          width: 20px;
+          height: 20px; }
+    .opinion__others p {
+      font-size: 1rem;
+      width: 400px; }
 
 body {
   font-family: "Nunito", sans-serif;
