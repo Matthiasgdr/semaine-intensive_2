@@ -4,21 +4,26 @@
   background-color: #E0E5FF;
   position: relative;
   text-align: center;
+  margin: 0;
   font-size: 0.8rem;
   font-style: italic; }
 
 nav {
   font-family: "Nunito", sans-serif;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   nav ul {
     list-style: none; }
   nav .logo {
     margin-left: 30px;
-    width: 100px;
-    height: 100px; }
+    width: 150px;
+    height: 150px; }
   nav .navigation {
-    padding-top: 50px;
+    padding: 30px 10px;
+    margin: 0;
     display: flex;
+    align-items: center;
     font-weight: bold; }
   nav h2 {
     font-weight: bold;
@@ -46,9 +51,9 @@ nav {
       flex-direction: column;
       min-width: 200px;
       background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px 5px 5px 5px;
+      padding: 30px 10px 10px 10px;
       display: none;
-      border-radius: 10px;
+      border-radius: 5px;
       position: absolute; }
   nav .primary__nav ul li {
     padding: 2px 0px;
@@ -63,11 +68,11 @@ nav {
     z-index: -2; }
 
 .user__service {
-  padding: 30px 3vw;
   font-size: 1.3rem;
   font-weight: bold; }
   .user__service div {
     display: flex;
+    align-items: center;
     position: relative; }
     .user__service div:hover:after {
       content: '';
@@ -83,7 +88,6 @@ nav {
       width: 50px;
       height: 50px; }
     .user__service div p {
-      padding-top: 10px;
       margin: 0;
       position: relative; }
 
