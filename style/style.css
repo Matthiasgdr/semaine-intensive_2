@@ -32,15 +32,18 @@ nav {
     margin: 0;
     position: relative; }
     nav h2:hover::after {
+      width: 110%; }
+    nav h2::after {
       content: "";
       position: absolute;
       bottom: -8px;
       left: -7px;
       background-color: #FCEDFF;
       z-index: -1;
-      width: 110%;
+      width: 0%;
       height: 20px;
-      transform: skewX(-30deg); }
+      transform: skewX(-30deg);
+      transition: all 0.3s ease-out; }
   nav .primary__nav {
     margin: 5px 1.5vw;
     cursor: pointer;
@@ -68,22 +71,23 @@ nav {
     z-index: -2; }
 
 .user__service {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold; }
   .user__service div {
     display: flex;
     align-items: center;
     position: relative; }
-    .user__service div:hover:after {
-      content: '';
+    .user__service div:hover::after {
+      content: "";
       position: absolute;
-      bottom: 0px;
-      left: -10px;
+      bottom: -8px;
+      left: -7px;
       background-color: #FCEDFF;
       z-index: -1;
       width: 110%;
       height: 20px;
-      transform: skewX(-30deg); }
+      transform: skewX(-30deg);
+      transition: all 2s; }
     .user__service div img {
       width: 50px;
       height: 50px; }
