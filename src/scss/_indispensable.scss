@@ -7,6 +7,9 @@
     h3{
         position: relative;
         top:-48px;
+        @media screen and (max-width: $break-small){
+          top: -40px;
+        }
     }
     .center{
         text-align: center;
