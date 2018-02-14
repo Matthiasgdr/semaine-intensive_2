@@ -9,9 +9,6 @@
 
 nav {
   font-family: "Nunito", sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
   nav ul {
     list-style: none; }
@@ -21,9 +18,6 @@ nav {
     height: 100px; }
   nav .navigation {
     padding-top: 50px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     font-weight: bold; }
   nav h2 {
@@ -41,8 +35,6 @@ nav {
       z-index: -1;
       width: 110%;
       height: 20px;
-      -webkit-transform: skewX(-30deg);
-      -ms-transform: skewX(-30deg);
       transform: skewX(-30deg); }
   nav .primary__nav {
     margin: 5px 1.5vw;
@@ -51,10 +43,6 @@ nav {
     text-align: center;
     z-index: 1; }
     nav .primary__nav ul {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
       min-width: 200px;
       background-color: rgba(255, 255, 255, 0.9);
@@ -79,9 +67,6 @@ nav {
   font-size: 1.3rem;
   font-weight: bold; }
   .user__service div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     position: relative; }
     .user__service div:hover:after {
@@ -93,8 +78,6 @@ nav {
       z-index: -1;
       width: 110%;
       height: 20px;
-      -webkit-transform: skewX(-30deg);
-      -ms-transform: skewX(-30deg);
       transform: skewX(-30deg); }
     .user__service div img {
       width: 50px;
@@ -134,28 +117,15 @@ main {
     color: #242424; }
 
 .main__article__pros {
-  width: 500px;
+  max-width: 700px;
   margin: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 40px 0; }
   .main__article__pros__point {
+    font-size: 0.9rem;
     padding: 5px 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row; }
     .main__article__pros__point img {
       margin-right: 15px;
@@ -191,7 +161,7 @@ main {
       left: 5px; }
   .main__article__center div p {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: #888888; }
   .main__article__center div img {
     width: 80px;
@@ -201,18 +171,8 @@ main {
   margin: 35px auto;
   width: 600px; }
   .main__article__container div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
 
 .main__article2 {
@@ -227,9 +187,6 @@ main {
   .main__article2 .center {
     text-align: center; }
   .main__article2 .products {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     text-align: center;
     margin: 0 auto; }
@@ -244,30 +201,13 @@ main {
 
 .footer {
   font-family: "Nunito", sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   font-family: "Nunito", sans-serif;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   .footer .footer__column {
     margin: 100px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column; }
     .footer .footer__column a {
       text-decoration: none; }
@@ -277,12 +217,8 @@ main {
       fill: black;
       color: black;
       margin: 5px;
-      -webkit-transition: 0.3s ease-out;
-      -o-transition: 0.3s ease-out;
       transition: 0.3s ease-out; }
     .footer .footer__column .footer__column__socials a:hover svg {
-      -webkit-transition: 0.3s ease-out;
-      -o-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       fill: #ffaffd; }
     .footer .footer__column .footer__column__mail {
@@ -295,26 +231,18 @@ main {
         margin: auto;
         text-align: center;
         padding: 5px 10px;
-        -webkit-transition: 0.3s ease-out;
-        -o-transition: 0.3s ease-out;
         transition: 0.3s ease-out; }
       .footer .footer__column .footer__column__mail a:hover h4 {
         background-color: #ffaffd;
-        -webkit-transition: 0.3s ease-out;
-        -o-transition: 0.3s ease-out;
         transition: 0.3s ease-out; }
   .footer h3 {
     font-weight: bold;
     color: #242424;
     text-align: center;
     font-size: 0.9rem;
-    -webkit-transition: 0.3s ease-out;
-    -o-transition: 0.3s ease-out;
     transition: 0.3s ease-out; }
   .footer a h3:hover, .footer h4:hover {
     color: #ffaffd;
-    -webkit-transition: 0.3s ease-out;
-    -o-transition: 0.3s ease-out;
     transition: 0.3s ease-out; }
   .footer h2 {
     font-size: 0.9rem;
@@ -329,3 +257,5 @@ body {
   margin: 0;
   font-size: 62.5%;
   color: #242424; }
+
+/*# sourceMappingURL=style.css.map */
