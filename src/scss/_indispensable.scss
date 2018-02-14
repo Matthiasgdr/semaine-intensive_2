@@ -17,7 +17,11 @@
           padding: 0;
         }
         img{
-            margin-bottom: 20px;
+            margin: 20px 0;
+            @media screen and (max-width: $break-small){
+              width: 100%;
+              margin-right: 0;
+            }
         }
         .bold{
             font-weight: 700;
@@ -26,5 +30,11 @@
             margin:0;
             text-align: center;
         }
+    }
+    .row{
+      @media screen and (max-width: $break-small){
+        width: 100%;
+        margin: 0;
+      }
     }
 }
