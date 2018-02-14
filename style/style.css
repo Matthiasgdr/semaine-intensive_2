@@ -197,8 +197,8 @@ main {
   .main__article2 .center {
     text-align: center; }
   .main__article2 .products {
-    display: inline-flex;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 0 auto; }
   .main__article2 .item {
     padding: 0 20px; }

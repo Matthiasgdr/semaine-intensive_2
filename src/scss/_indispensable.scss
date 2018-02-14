@@ -12,8 +12,8 @@
         text-align: center;
     }
     .products{
-        display: inline-flex;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         margin:0 auto;
     }
     .item{
@@ -28,6 +28,4 @@
             margin:0;
         }
     }
-
-
 }
