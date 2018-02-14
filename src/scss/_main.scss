@@ -7,6 +7,9 @@ main
     font-size: 2.5rem;
     padding: 20px 100px;
     color: $text;
+    @media screen and (max-width: $break-medium){
+      padding: 20px 50px;
+    }
   }
 }
 

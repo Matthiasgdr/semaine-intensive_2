@@ -8,12 +8,26 @@
     font-size: 0.8rem;
     font-style: italic;
 }
+header{
+  display: flex;
+  .logo{
+    margin-left: 30px;
+    width:100px;
+    height:100px;
+
+    @media screen and (max-width: $break-medium){
+      margin: 0 auto;
+    }
+  }
+}
 nav{
     font-family: $primary-font;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    @media screen and (max-width: $break-medium){
+      display: none;
+    }
     ul{
         list-style: none;
     }
