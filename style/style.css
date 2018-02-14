@@ -12,7 +12,11 @@ header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   header .logo {
     margin-left: 30px;
     width: 150px;
@@ -62,6 +66,12 @@ nav {
     padding: 0;
     margin: 0;
     position: relative; }
+    nav h2 a {
+      color: #242424;
+      text-decoration: none; }
+      nav h2 a:hover {
+        text-decoration: none;
+        color: #242424; }
     nav h2:hover::after {
       width: 110%; }
     nav h2::after {
@@ -105,6 +115,11 @@ nav {
     text-align: left; }
     nav .primary__nav ul li:hover {
       color: #242424; }
+    nav .primary__nav ul li a {
+      text-decoration: none;
+      color: #888888; }
+      nav .primary__nav ul li a:hover {
+        color: #242424; }
   nav .primary__nav:hover ul {
     display: block;
     z-index: -2; }
