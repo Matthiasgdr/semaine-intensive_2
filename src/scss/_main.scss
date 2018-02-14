@@ -7,16 +7,20 @@ main
     font-size: 2.5rem;
     padding: 20px 100px;
     color: $text;
+    @media screen and (max-width: $break-medium){
+      padding: 20px 50px;
+    }
   }
 }
 
 .main__article__pros {
-  width: 500px;
+    max-width:700px;
   margin: auto;
   display: flex;
   flex-direction: column;
   padding: 40px 0;
   &__point {
+    font-size: 0.9rem;
     padding: 5px 0;
     display: flex;
     flex-direction: row;
@@ -67,7 +71,7 @@ main
     p
     {
       margin: 0;
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       color: $grey;
     }
     img
@@ -82,7 +86,9 @@ main
   margin: 35px auto;
   width: 600px;
   div
-  {display: flex;
+  {
+      display: flex;
   flex-direction: row;
-  align-items: center;}
+  align-items: center;
+}
 }

@@ -1,8 +1,8 @@
 .main__article2{
     margin-top: 8vh;
     padding-bottom: 60px;
-    background-color: $pink;
     font-size: 1.2rem;
+    background-color: $pink;
     font-family: $primary-font;
     h3{
         position: relative;
@@ -11,13 +11,11 @@
     .center{
         text-align: center;
     }
-    .products{
-        display: inline-flex;
-        text-align: center;
-        margin:0 auto;
-    }
     .item{
         padding: 0 20px;
+        @media screen and (max-width: $break-small){
+          padding: 0;
+        }
         img{
             margin-bottom: 20px;
         }
@@ -26,8 +24,7 @@
         }
         p{
             margin:0;
+            text-align: center;
         }
     }
-
-
 }

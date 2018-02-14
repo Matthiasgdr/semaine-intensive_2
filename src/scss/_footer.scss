@@ -8,6 +8,11 @@
     margin: 100px;
     display: flex;
     flex-direction: column;
+    &:nth-child(2){
+      @media screen and (max-width: $break-medium){
+        display: none;
+      }
+    }
     a {
 
       text-decoration: none;
@@ -23,6 +28,10 @@
       a:hover svg {
         transition: 0.3s ease-out;
         fill: $darkpink;
+      }
+      @media screen and (max-width: $break-medium){
+        display: flex;
+        flex-direction: row;
       }
     }
     .footer__column__mail {

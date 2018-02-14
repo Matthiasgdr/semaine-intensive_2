@@ -1,26 +1,46 @@
+
 .desc{
     padding: 10px;
     background-color: $blue;
     position: relative;
     text-align: center;
+    margin:0;
     font-size: 0.8rem;
     font-style: italic;
+}
+header{
+  display: flex;
+  .logo{
+    margin-left: 30px;
+    width:150px;
+    height:150px;
+
+    @media screen and (max-width: $break-medium){
+      margin: 0 auto;
+    }
+  }
 }
 nav{
     font-family: $primary-font;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $break-medium){
+      display: none;
+    }
     ul{
         list-style: none;
     }
     .logo{
       margin-left: 30px;
-      width:100px;
-      height:100px;
+      width:150px;
+      height:150px;
     }
     .navigation{
-        padding-top: 50px;
+        padding: 30px 10px;
+        margin:0;
         display:flex;
+        align-items: center;
         font-weight: bold;
     }
     h2{
@@ -30,6 +50,10 @@ nav{
         margin:0;
         position: relative;
         &:hover{
+            &::after{
+                width:110%;
+            }
+        }
         &::after{
             content: "";
             position:absolute;
@@ -37,12 +61,13 @@ nav{
             left:-7px;
             background-color: $pink;
             z-index: -1;
-            width:110%;
+            width:0%;
             height:20px;
             transform: skewX(-30deg);
+            transition: all 0.3s ease-out;
         }
       }
-    }
+
 
     .primary__nav{
         margin: 5px 1.5vw;
@@ -54,9 +79,9 @@ nav{
             flex-direction: column;
             min-width: 200px;
             background-color: rgba(255,255,255,0.9);
-            padding:30px 5px 5px 5px;
+            padding:30px 10px 10px 10px;
             display: none;
-            border-radius: 10px;
+            border-radius: 5px;
             position: absolute;
         }
     }
@@ -77,23 +102,28 @@ nav{
     }
 }
 .user__service{
-    padding: 30px 3vw;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     div{
         display: flex;
+        align-items: center;
         position: relative;
         &:hover{
-        &:after{
-            content: '';
+            &::after{
+            width: 110%;
+        }
+    }
+        &::after{
+            content: "";
             position:absolute;
-            bottom:0px;
-            left:-10px;
+            bottom:3px;
+            left:-7px;
             background-color: $pink;
             z-index: -1;
-            width:110%;
+            width:0%;
             height:20px;
             transform: skewX(-30deg);
+            transition: all 0.3s;
         }
     }
         img{
@@ -101,9 +131,7 @@ nav{
             height:50px;
         }
         p{
-            padding-top:10px;
             margin:0;
             position: relative;
     }
-}
 }
