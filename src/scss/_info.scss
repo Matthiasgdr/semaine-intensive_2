@@ -19,6 +19,9 @@ p
         {
           width: 50px;
         }
+        img {
+          width: 200px; height: 200px;
+        }
       }
     }
     &:nth-child(2)
@@ -46,10 +49,21 @@ p
     {
       background: $pink;
       padding-bottom: 60px;
+      text-align: center;
+      h3
+      {
+        text-align: left;
+      }
       p
       {
         margin: 0 auto;
         width: 60%;
+        text-align: left;
+      }
+
+      .sew {
+        width: 300px;
+        margin: 10px auto;
       }
     }
     &:last-of-type

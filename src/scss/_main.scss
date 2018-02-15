@@ -10,32 +10,42 @@ main
     @media screen and (max-width: $break-medium){
       padding: 20px 50px;
     }
+    @media screen and (max-width: $break-small){
+      padding: 20px 25px;
+      font-size: 1.8rem;
+    }
   }
 }
 
 .main__article__pros {
-    max-width:700px;
+  max-width:700px;
   margin: auto;
   display: flex;
   flex-direction: column;
   padding: 40px 0;
   &__point {
-    font-size: 0.9rem;
     padding: 5px 0;
     display: flex;
     flex-direction: row;
     p
     {
       font-size: 0.9rem;
-      justify-content: center;
+      margin: auto 0;
+    }
+    @media screen and (max-width: $break-small){
+      flex-direction: column;
+      text-align: center;
     }
     img {
       margin-right: 15px;
-      width: 60px; height: 60px;
+      width: 60px;
+      height: 60px;
+      @media screen and (max-width: $break-small){
+        margin: 0 auto;
+      }
     }
     p {
-      padding-top: 20px;
-      color: $grey;
+      color: $text;
     }
   }
 }
@@ -57,18 +67,23 @@ main
     font-weight: bold;
     font-size: 1rem;
     position: relative;
-
+    &:hover{
+        &:after{
+            width:102%;
+        }
+    }
     &:after
     {
       content: "";
       background: $blue;
       border-radius: 5px;
       z-index: -1;
-      width: 102%;
+      width: 0%;
       height: 110%;
       position: absolute;
       top: 5px;
       left: 5px;
+      transition: all 0.3s ease-out;
     }
   }
   div
@@ -85,15 +100,4 @@ main
       margin: 10px;
     }
   }
-}
-.main__article__container
-{
-  margin: 35px auto;
-  width: 600px;
-  div
-  {
-      display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 }
