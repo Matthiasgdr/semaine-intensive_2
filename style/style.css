@@ -162,16 +162,33 @@ nav {
     position: relative; }
 
 .carrousel {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden; }
   @media screen and (max-width: 1024px) {
     .carrousel {
-      z-index: -1; } }
+      z-index: -1;
+      height: 250px; } }
+  @media screen and (max-width: 380px) {
+    .carrousel {
+      z-index: -1;
+      height: 125px; } }
+  .carrousel .images {
+    position: relative; }
+    .carrousel .images .w-100 {
+      -webkit-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
   .carrousel .flechegauche {
     height: 50px;
     width: 50px;
     position: absolute;
     left: 8%;
-    top: 45%; }
+    top: 45%;
+    opacity: 0.5; }
+    .carrousel .flechegauche:hover {
+      opacity: 1; }
     .carrousel .flechegauche img {
       width: 50px;
       height: 50px; }
@@ -183,7 +200,10 @@ nav {
     width: 50px;
     position: absolute;
     top: 39%;
-    left: 8%; }
+    left: 8%;
+    opacity: 0.5; }
+    .carrousel .flechedroite:hover {
+      opacity: 1; }
     .carrousel .flechedroite img {
       width: 50px;
       height: 50px; }

@@ -4,7 +4,6 @@ let imgs = document.getElementsByClassName('w-100')
 let index = 0
 
 function goUp() {
-  console.log('up');
   if (index < imgs.length*100-100) {
     index += 100
     for (var i = 0; i < imgs.length; i++) {
@@ -14,7 +13,6 @@ function goUp() {
 }
 
 function goDown() {
-  console.log('down');
   if (index > 0) {
     index -= 100
     for (var i = 0; i < imgs.length; i++) {
