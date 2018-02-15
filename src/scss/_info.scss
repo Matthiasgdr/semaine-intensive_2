@@ -1,6 +1,9 @@
 p
 {
   font-size: 1.2rem;
+  @media screen and (max-width: $break-small){
+    font-size: 0.8rem;
+  }
 }
 .main__info
 {
@@ -10,14 +13,26 @@ p
     {
       background: $blue;
       padding-bottom: 60px;
+      @media screen and (max-width: $break-medium){
+        padding-top: 50px;
+      }
       .texte
       {
         text-align: center;
         margin: 0 auto;
         width: 70%;
+        p:nth-child(3)
+        {
+          @media screen and (max-width: $break-medium){
+            display: none;
+          }
+        }
         a img
         {
           width: 50px;
+          @media screen and (max-width: $break-medium){
+            display: none;
+          }
         }
         img {
           width: 200px; height: 200px;
@@ -38,10 +53,26 @@ p
         justify-content: space-around;
         margin: 40px 100px;
         padding-bottom: 60px;
+        @media screen and (max-width: $break-medium){
+          margin: 0;
+        }
+        @media screen and (max-width: $break-small){
+          flex-direction: column;
+        }
         .texte
         {
           align-self: center;
           width: 40%;
+          @media screen and (max-width: $break-small){
+            width: 80%;
+          }
+        }
+        img
+        {
+          @media screen and (max-width: $break-small){
+            width: 50%;
+            margin: 10px auto;
+          }
         }
       }
     }
@@ -80,6 +111,9 @@ p
     {
       position: relative;
       top: -48px;
+      @media screen and (max-width: $break-small){
+        top: -38px;
+      }
     }
   }
 }

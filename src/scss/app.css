@@ -484,6 +484,8 @@ label {
       .product__desc__buttons__add {
         display: flex;
         flex-direction: row; }
+        .product__desc__buttons__add a {
+          margin: 0 10px; }
 
 .opinion {
   background: #FCEDFF;
@@ -560,16 +562,28 @@ label {
 
 p {
   font-size: 1.2rem; }
+  @media screen and (max-width: 380px) {
+    p {
+      font-size: 0.8rem; } }
 
 .main__info .main__article:first-of-type {
   background: #E0E5FF;
   padding-bottom: 60px; }
+  @media screen and (max-width: 1024px) {
+    .main__info .main__article:first-of-type {
+      padding-top: 50px; } }
   .main__info .main__article:first-of-type .texte {
     text-align: center;
     margin: 0 auto;
     width: 70%; }
+    @media screen and (max-width: 1024px) {
+      .main__info .main__article:first-of-type .texte p:nth-child(3) {
+        display: none; } }
     .main__info .main__article:first-of-type .texte a img {
       width: 50px; }
+      @media screen and (max-width: 1024px) {
+        .main__info .main__article:first-of-type .texte a img {
+          display: none; } }
     .main__info .main__article:first-of-type .texte img {
       width: 200px;
       height: 200px; }
@@ -582,9 +596,22 @@ p {
   justify-content: space-around;
   margin: 40px 100px;
   padding-bottom: 60px; }
+  @media screen and (max-width: 1024px) {
+    .main__info .main__article:nth-child(2) .main__article__pollenni {
+      margin: 0; } }
+  @media screen and (max-width: 380px) {
+    .main__info .main__article:nth-child(2) .main__article__pollenni {
+      flex-direction: column; } }
   .main__info .main__article:nth-child(2) .main__article__pollenni .texte {
     align-self: center;
     width: 40%; }
+    @media screen and (max-width: 380px) {
+      .main__info .main__article:nth-child(2) .main__article__pollenni .texte {
+        width: 80%; } }
+  @media screen and (max-width: 380px) {
+    .main__info .main__article:nth-child(2) .main__article__pollenni img {
+      width: 50%;
+      margin: 10px auto; } }
 .main__info .main__article:nth-child(3) {
   background: #FCEDFF;
   padding-bottom: 60px;
@@ -607,6 +634,9 @@ p {
 .main__info .main__article h3 {
   position: relative;
   top: -48px; }
+  @media screen and (max-width: 380px) {
+    .main__info .main__article h3 {
+      top: -38px; } }
 
 body {
   font-family: "Nunito", sans-serif;
