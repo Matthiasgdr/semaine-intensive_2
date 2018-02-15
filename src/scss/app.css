@@ -481,6 +481,9 @@ label {
         color: #242424;
         text-decoration: none;
         font-weight: bold; }
+      .product__desc__buttons__add {
+        display: flex;
+        flex-direction: row; }
 
 .opinion {
   background: #FCEDFF;
