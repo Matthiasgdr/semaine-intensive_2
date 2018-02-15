@@ -383,6 +383,9 @@ label {
   flex-direction: row;
   background: #E0E5FF;
   padding: 10px 190px; }
+  @media screen and (max-width: 375px) {
+    .breadcrumbs {
+      padding: 10px 20px; } }
   .breadcrumbs a {
     text-decoration: none;
     color: #242424; }
@@ -394,9 +397,14 @@ label {
     font-size: 0.8rem; }
 
 .product {
-  padding: 40px 190px;
+  margin: 50px 20vw;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
+  @media screen and (max-width: 375px) {
+    .product {
+      flex-direction: column;
+      margin: 50px 0; } }
   .product h4 {
     margin: 20px 0;
     font-size: 1.4rem;
@@ -425,7 +433,7 @@ label {
         text-align: center;
         background: #E0E5FF; }
       .product__desc__buttons a {
-        margin-left: 300px;
+        margin-left: 10vw;
         font-size: 1.2rem;
         background: #FCEDFF;
         padding: 15px 30px;
@@ -448,6 +456,9 @@ label {
     margin-right: 80px;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 375px) {
+      .opinion__others {
+        display: none; } }
     .opinion__others__title {
       display: flex;
       flex-direction: row; }
@@ -477,7 +488,7 @@ label {
     border: 1px solid #FCEDFF;
     border-radius: 5px;
     height: 30%;
-    width: 120%;
+    width: 100%;
     resize: none; }
   .opinion form h4 {
     margin-bottom: 4px; }
@@ -485,7 +496,7 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 120%;
+    width: 100%;
     margin-top: 8px; }
     .opinion form .opinion__you__last .note {
       display: flex;

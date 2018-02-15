@@ -3,6 +3,9 @@
   flex-direction: row;
   background: $blue;
   padding: 10px 190px;
+  @media screen and (max-width: 375px){
+     padding: 10px 20px;
+  }
   a {
     text-decoration: none;
     color: $black;
@@ -19,9 +22,14 @@
 }
 
 .product {
-  padding: 40px 190px;
+    margin: 50px 20vw;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  @media screen and (max-width: 375px){
+      flex-direction: column;
+      margin: 50px 0;
+  }
   h4 {
     margin: 20px 0;
     font-size: 1.4rem;
@@ -56,7 +64,7 @@
         background: $blue;
       }
       a {
-        margin-left: 300px;
+        margin-left: 10vw;
         font-size: 1.2rem;
         background: $pink;
         padding: 15px 30px;
@@ -84,6 +92,9 @@
     margin-right: 80px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 375px){
+        display: none;
+    }
     &__title {
       display: flex;
       flex-direction: row;
@@ -124,7 +135,7 @@
       border: 1px solid $pink;
       border-radius: 5px;
       height: 30%;
-      width: 120%;
+      width: 100%;
       resize: none;
     }
     h4
@@ -136,7 +147,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 120%;
+      width: 100%;
       margin-top: 8px;
       .note
       {
