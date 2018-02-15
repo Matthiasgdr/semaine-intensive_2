@@ -8,6 +8,9 @@
     margin: 100px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: $break-small){
+      margin: 50px;
+    }
     &:nth-child(2){
       @media screen and (max-width: $break-medium){
         display: none;
