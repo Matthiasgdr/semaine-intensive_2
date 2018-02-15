@@ -49,10 +49,21 @@ p
     {
       background: $pink;
       padding-bottom: 60px;
+      text-align: center;
+      h3
+      {
+        text-align: left;
+      }
       p
       {
         margin: 0 auto;
         width: 60%;
+        text-align: left;
+      }
+
+      .sew {
+        width: 300px;
+        margin: 10px auto;
       }
     }
     &:last-of-type
