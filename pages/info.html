@@ -106,7 +106,7 @@
           <p>“Douce de Po, c’est d’abord l’envie d’une maman rêveuse de faire découvrir son monde féérique et rempli de douceur à toutes celles qui viennent de donner la vie.”</p>
           <img src="../images/ourse.png" alt="image d'ours avec des étoiles">
           <p>Descendez pour en apprendre plus sur la créatrice</p>
-          <a href="#creatrice"><img src="../images/fleche_ronde.svg" alt="illustration d'une fleche ronde"></a>
+          <a id="scroll" href="#creatrice"><img src="../images/fleche_ronde.svg" alt="illustration d'une fleche ronde"></a>
         </div>
       </article>
       <article class="main__article">
@@ -193,7 +193,17 @@
             <a href="#"><h3>Partenaires</h3></a>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#scroll').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
