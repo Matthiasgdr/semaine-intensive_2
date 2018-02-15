@@ -449,6 +449,13 @@ label {
     background: #FCEDFF; }
     .product__image img {
       width: 300px; }
+  .product__thumbnail {
+    border: 7px solid #FCEDFF;
+    border-radius: 5px;
+    margin: 0px 5px 5px 0px; }
+    .product__thumbnail img {
+      flex-direction: column;
+      width: 50px; }
   .product__desc {
     margin: 30px; }
     .product__desc p {
@@ -456,7 +463,8 @@ label {
       margin: 5px 0; }
     .product__desc__buttons {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      justify-content: space-between; }
       .product__desc__buttons input {
         width: 100px;
         border-style: none;
@@ -467,7 +475,6 @@ label {
         text-align: center;
         background: #E0E5FF; }
       .product__desc__buttons a {
-        margin-left: 300px;
         font-size: 1.2rem;
         background: #FCEDFF;
         padding: 15px 30px;

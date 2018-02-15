@@ -1,6 +1,10 @@
 /*
 Error: Undefined variable: "$blue".
+<<<<<<< HEAD
         on line 11 of /Users/hugo/Desktop/tomerge/src/scss/info.scss
+=======
+        on line 11 of /Users/morgane/Documents/GitHub/semaine-intensive_2/src/scss/info.scss
+>>>>>>> origin/imgproduct
 
 6: {
 7:   .main__article
@@ -15,7 +19,11 @@ Error: Undefined variable: "$blue".
 16:         margin: 0 auto;
 
 Backtrace:
+<<<<<<< HEAD
 /Users/hugo/Desktop/tomerge/src/scss/info.scss:11
+=======
+/Users/morgane/Documents/GitHub/semaine-intensive_2/src/scss/info.scss:11
+>>>>>>> origin/imgproduct
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -84,4 +92,8 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
+<<<<<<< HEAD
   content: "Error: Undefined variable: \"$blue\".\A         on line 11 of /Users/hugo/Desktop/tomerge/src/scss/info.scss\A \A 6: {\A 7:   .main__article\A 8:   {\A 9:     &:first-of-type\A 10:     {\A 11:       background: $blue;\A 12:       padding-bottom: 60px;\A 13:       .texte\A 14:       {\A 15:         text-align: center;\A 16:         margin: 0 auto;"; }
+=======
+  content: "Error: Undefined variable: \"$blue\".\A         on line 11 of /Users/morgane/Documents/GitHub/semaine-intensive_2/src/scss/info.scss\A \A 6: {\A 7:   .main__article\A 8:   {\A 9:     &:first-of-type\A 10:     {\A 11:       background: $blue;\A 12:       padding-bottom: 60px;\A 13:       .texte\A 14:       {\A 15:         text-align: center;\A 16:         margin: 0 auto;"; }
+>>>>>>> origin/imgproduct
