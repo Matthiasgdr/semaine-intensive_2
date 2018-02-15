@@ -618,7 +618,8 @@ label {
   .product__thumbnail {
     border: 7px solid #FCEDFF;
     border-radius: 5px;
-    margin: 0px 5px 5px 0px; }
+    margin: 0px 5px 5px 0px;
+    width: 20%; }
     @media screen and (max-width: 1024px) {
       .product__thumbnail {
         height: 20%; } }
