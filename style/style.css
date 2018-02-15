@@ -516,9 +516,6 @@ p {
     text-align: center;
     margin: 0 auto;
     width: 70%; }
-    .main__info .main__article:first-of-type .texte img {
-      width: 250px;
-      height: 250px; }
     .main__info .main__article:first-of-type .texte a img {
       width: 50px; }
 .main__info .main__article:nth-child(2) h4 {
