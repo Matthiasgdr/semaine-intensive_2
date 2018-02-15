@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   background: $blue;
-  padding: 10px 190px;
+  padding: 10px 90px;
   a {
     text-decoration: none;
     color: $black;
@@ -19,24 +19,25 @@
 }
 
 .product {
-  padding: 40px 190px;
-  display: flex;
-  flex-direction: row;
+    margin: 0 10vw;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   h4 {
     margin: 20px 0;
     font-size: 1.4rem;
     font-weight: bold;
   }
   &__image {
-    border: 10px solid $pink;
-    border-radius: 5px;
-    background: $pink;
     img {
+        border: 10px solid $pink;
+        border-radius: 5px;
       width: 300px;
     }
   }
   &__desc {
-    margin: 30px;
+    padding: 30px;
     //width: 400px;
     p {
       font-size: 0.8rem;
@@ -56,7 +57,7 @@
         background: $blue;
       }
       a {
-        margin-left: 300px;
+        margin-left: 20vw;
         font-size: 1.2rem;
         background: $pink;
         padding: 15px 30px;
@@ -71,7 +72,7 @@
 .opinion {
   background: $pink;
   position: relative;
-  padding: 40px 190px;
+  padding: 40px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;

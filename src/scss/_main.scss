@@ -57,6 +57,11 @@ main
     font-weight: bold;
     font-size: 1rem;
     position: relative;
+    &:hover{
+        &:after{
+            background: $pink;
+        }
+    }
 
     &:after
     {
@@ -69,20 +74,7 @@ main
       position: absolute;
       top: 5px;
       left: 5px;
-    }
-  }
-  div
-  {
-    p
-    {
-      margin: 0;
-      font-size: 1.2rem;
-      color: $grey;
-    }
-    img
-    {
-      width: 80px;
-      margin: 10px;
+      transition: background 0.5s;
     }
   }
 }

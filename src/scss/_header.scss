@@ -22,6 +22,13 @@ header{
   }
 }
 nav{
+    a{
+        color:inherit;
+        &:hover{
+            text-decoration: none;
+            color:inherit;
+        }
+    }
     font-family: $primary-font;
     display: flex;
     justify-content: center;
@@ -149,6 +156,7 @@ nav{
         img{
             width:50px;
             height:50px;
+            margin-right:10px;
         }
         p{
             margin:0;
